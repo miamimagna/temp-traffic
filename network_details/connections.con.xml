@@ -1,0 +1,19 @@
+<connections>
+
+    <connection from="N-IN" to="E-OUT" fromLane="0" toLane="0"/>
+    <connection from="N-IN" to="S-OUT" fromLane="0" toLane="0"/>
+    <connection from="N-IN" to="W-OUT" fromLane="0" toLane="0"/>
+    
+    <connection from="S-IN" to="W-OUT" fromLane="0" toLane="0"/>
+    <connection from="S-IN" to="N-OUT" fromLane="0" toLane="0"/>
+    <connection from="S-IN" to="E-OUT" fromLane="0" toLane="0"/>
+    
+    <connection from="W-IN" to="S-OUT" fromLane="0" toLane="0"/>
+    <connection from="W-IN" to="N-OUT" fromLane="0" toLane="0"/>
+    <connection from="W-IN" to="E-OUT" fromLane="0" toLane="0"/>
+    
+    <connection from="E-IN" to="N-OUT" fromLane="0" toLane="0"/>
+    <connection from="E-IN" to="S-OUT" fromLane="0" toLane="0"/>
+    <connection from="E-IN" to="W-OUT" fromLane="0" toLane="0"/>
+
+</connections>

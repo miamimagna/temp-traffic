@@ -1,0 +1,5 @@
+1. netconvert --node-files=network_details/nodes.nod.xml --edge-files=network_details/edges.edg.xml --type-files=network_details/types.typ.xml --connection-files=network_details/connections.con.xml --output-file=intersection.net.xml --lefthand
+
+2. edit scenes_config.py and trips_generator/config.py
+
+3. python scenes_generator.py
