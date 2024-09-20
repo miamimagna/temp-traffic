@@ -42,7 +42,7 @@ def generate_trips(scene: str, env_type: str, emergency_prob: float) -> None:
         [
             "duarouter",
             "-n",
-            "intersection.net.xml",  # Input network file
+            "./network_details/intersection.net.xml",  # Input network file
             "-t",
             "trips.trips.xml",  # Input trips file
             "-o",
