@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-09-21 02:44:46 by Eclipse SUMO netconvert Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="network_details/nodes.nod.xml"/>
+        <edge-files value="network_details/edges.edg.xml"/>
+        <connection-files value="network_details/connections.con.xml"/>
+        <tllogic-files value="network_details/traffic_light.tll.xml"/>
+        <type-files value="network_details/types.typ.xml"/>
+    </input>
+
+    <output>
+        <output-file value="network_details/intersection.net.xml"/>
+    </output>
+
+    <processing>
+        <lefthand value="true"/>
+    </processing>
+
+</configuration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" lefthand="true" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="750.00,750.00" convBoundary="0.00,-0.00,1500.00,1500.00" origBoundary="-750.00,-750.00,750.00,750.00" projParameter="!"/>
+
+    <type id="highway" priority="78" numLanes="1" speed="13.89"/>
+
+    <edge id=":East_0" function="internal">
+        <lane id=":East_0_0" index="0" speed="3.65" length="4.67" shape="1500.00,751.60 1501.20,750.80 1501.60,750.00 1501.20,749.20 1500.00,748.40"/>
+    </edge>
+    <edge id=":North_0" function="internal">
+        <lane id=":North_0_0" index="0" speed="3.65" length="4.67" shape="748.40,1500.00 749.20,1501.20 750.00,1501.60 750.80,1501.20 751.60,1500.00"/>
+    </edge>
+    <edge id=":South_0" function="internal">
+        <lane id=":South_0_0" index="0" speed="3.65" length="4.67" shape="751.60,-0.00 750.80,-1.20 750.00,-1.60 749.20,-1.20 748.40,-0.00"/>
+    </edge>
+    <edge id=":TrafficLight_0" function="internal">
+        <lane id=":TrafficLight_0_0" index="0" speed="6.51" length="9.03" shape="748.40,742.80 748.05,745.25 747.00,747.00 745.25,748.05 742.80,748.40"/>
+    </edge>
+    <edge id=":TrafficLight_1" function="internal">
+        <lane id=":TrafficLight_1_0" index="0" speed="13.89" length="14.40" shape="748.40,742.80 748.40,757.20"/>
+    </edge>
+    <edge id=":TrafficLight_2" function="internal">
+        <lane id=":TrafficLight_2_0" index="0" speed="8.00" length="14.19" shape="748.40,742.80 748.95,746.65 750.60,749.40 753.35,751.05 757.20,751.60"/>
+    </edge>
+    <edge id=":TrafficLight_3" function="internal">
+        <lane id=":TrafficLight_3_0" index="0" speed="6.51" length="9.03" shape="757.20,748.40 754.75,748.05 753.00,747.00 751.95,745.25 751.60,742.80"/>
+    </edge>
+    <edge id=":TrafficLight_4" function="internal">
+        <lane id=":TrafficLight_4_0" index="0" speed="13.89" length="14.40" shape="757.20,748.40 742.80,748.40"/>
+    </edge>
+    <edge id=":TrafficLight_5" function="internal">
+        <lane id=":TrafficLight_5_0" index="0" speed="8.00" length="14.19" shape="757.20,748.40 753.35,748.95 750.60,750.60 748.95,753.35 748.40,757.20"/>
+    </edge>
+    <edge id=":TrafficLight_6" function="internal">
+        <lane id=":TrafficLight_6_0" index="0" speed="6.51" length="9.03" shape="751.60,757.20 751.95,754.75 753.00,753.00 754.75,751.95 757.20,751.60"/>
+    </edge>
+    <edge id=":TrafficLight_7" function="internal">
+        <lane id=":TrafficLight_7_0" index="0" speed="13.89" length="14.40" shape="751.60,757.20 751.60,742.80"/>
+    </edge>
+    <edge id=":TrafficLight_8" function="internal">
+        <lane id=":TrafficLight_8_0" index="0" speed="8.00" length="14.19" shape="751.60,757.20 751.05,753.35 749.40,750.60 746.65,748.95 742.80,748.40"/>
+    </edge>
+    <edge id=":TrafficLight_9" function="internal">
+        <lane id=":TrafficLight_9_0" index="0" speed="6.51" length="9.03" shape="742.80,751.60 745.25,751.95 747.00,753.00 748.05,754.75 748.40,757.20"/>
+    </edge>
+    <edge id=":TrafficLight_10" function="internal">
+        <lane id=":TrafficLight_10_0" index="0" speed="13.89" length="14.40" shape="742.80,751.60 757.20,751.60"/>
+    </edge>
+    <edge id=":TrafficLight_11" function="internal">
+        <lane id=":TrafficLight_11_0" index="0" speed="8.00" length="14.19" shape="742.80,751.60 746.65,751.05 749.40,749.40 751.05,746.65 751.60,742.80"/>
+    </edge>
+    <edge id=":West_0" function="internal">
+        <lane id=":West_0_0" index="0" speed="3.65" length="4.67" shape="0.00,748.40 -1.20,749.20 -1.60,750.00 -1.20,750.80 0.00,751.60"/>
+    </edge>
+
+    <edge id="E-IN" from="East" to="TrafficLight" priority="78" type="highway">
+        <lane id="E-IN_0" index="0" speed="13.89" length="742.80" shape="1500.00,748.40 757.20,748.40"/>
+    </edge>
+    <edge id="E-OUT" from="TrafficLight" to="East" priority="78" type="highway">
+        <lane id="E-OUT_0" index="0" speed="13.89" length="742.80" shape="757.20,751.60 1500.00,751.60"/>
+    </edge>
+    <edge id="N-IN" from="North" to="TrafficLight" priority="78" type="highway">
+        <lane id="N-IN_0" index="0" speed="13.89" length="742.80" shape="751.60,1500.00 751.60,757.20"/>
+    </edge>
+    <edge id="N-OUT" from="TrafficLight" to="North" priority="78" type="highway">
+        <lane id="N-OUT_0" index="0" speed="13.89" length="742.80" shape="748.40,757.20 748.40,1500.00"/>
+    </edge>
+    <edge id="S-IN" from="South" to="TrafficLight" priority="78" type="highway">
+        <lane id="S-IN_0" index="0" speed="13.89" length="742.80" shape="748.40,-0.00 748.40,742.80"/>
+    </edge>
+    <edge id="S-OUT" from="TrafficLight" to="South" priority="78" type="highway">
+        <lane id="S-OUT_0" index="0" speed="13.89" length="742.80" shape="751.60,742.80 751.60,-0.00"/>
+    </edge>
+    <edge id="W-IN" from="West" to="TrafficLight" priority="78" type="highway">
+        <lane id="W-IN_0" index="0" speed="13.89" length="742.80" shape="0.00,751.60 742.80,751.60"/>
+    </edge>
+    <edge id="W-OUT" from="TrafficLight" to="West" priority="78" type="highway">
+        <lane id="W-OUT_0" index="0" speed="13.89" length="742.80" shape="742.80,748.40 0.00,748.40"/>
+    </edge>
+
+    <tlLogic id="TrafficLight" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGgrrrrrrrrr"/>
+        <phase duration="3"  state="yyyrrrrrrrrr"/>
+        <phase duration="42" state="rrrGGgrrrrrr"/>
+        <phase duration="3"  state="rrryyyrrrrrr"/>
+        <phase duration="42" state="rrrrrrGGgrrr"/>
+        <phase duration="3"  state="rrrrrryyyrrr"/>
+        <phase duration="42" state="rrrrrrrrrGGg"/>
+        <phase duration="3"  state="rrrrrrrrryyy"/>
+    </tlLogic>
+
+    <junction id="East" type="priority" x="1500.00" y="750.00" incLanes="E-OUT_0" intLanes=":East_0_0" shape="1500.00,750.00 1500.00,753.20 1500.00,750.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="North" type="priority" x="750.00" y="1500.00" incLanes="N-OUT_0" intLanes=":North_0_0" shape="750.00,1500.00 746.80,1500.00 750.00,1500.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="South" type="priority" x="750.00" y="-0.00" incLanes="S-OUT_0" intLanes=":South_0_0" shape="750.00,-0.00 753.20,-0.00 750.00,-0.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="TrafficLight" type="traffic_light" x="750.00" y="750.00" incLanes="S-IN_0 E-IN_0 N-IN_0 W-IN_0" intLanes=":TrafficLight_0_0 :TrafficLight_1_0 :TrafficLight_2_0 :TrafficLight_3_0 :TrafficLight_4_0 :TrafficLight_5_0 :TrafficLight_6_0 :TrafficLight_7_0 :TrafficLight_8_0 :TrafficLight_9_0 :TrafficLight_10_0 :TrafficLight_11_0" shape="746.80,742.80 753.20,742.80 753.64,745.02 754.20,745.80 754.98,746.36 755.98,746.69 757.20,746.80 757.20,753.20 754.98,753.64 754.20,754.20 753.64,754.98 753.31,755.98 753.20,757.20 746.80,757.20 746.36,754.98 745.80,754.20 745.02,753.64 744.02,753.31 742.80,753.20 742.80,746.80 745.02,746.36 745.80,745.80 746.36,745.02 746.69,744.02">
+        <request index="0"  response="000000000000" foes="000100010000" cont="0"/>
+        <request index="1"  response="000000000000" foes="111100110000" cont="0"/>
+        <request index="2"  response="000011000000" foes="110111110000" cont="0"/>
+        <request index="3"  response="000010000000" foes="100010000000" cont="0"/>
+        <request index="4"  response="000110000111" foes="100110000111" cont="0"/>
+        <request index="5"  response="111110000110" foes="111110000110" cont="0"/>
+        <request index="6"  response="000000000000" foes="010000000100" cont="0"/>
+        <request index="7"  response="000000000000" foes="110000111100" cont="0"/>
+        <request index="8"  response="000000000111" foes="110000110111" cont="0"/>
+        <request index="9"  response="000000000010" foes="000000100010" cont="0"/>
+        <request index="10" response="000111000110" foes="000111100110" cont="0"/>
+        <request index="11" response="000110011110" foes="000110111110" cont="0"/>
+    </junction>
+    <junction id="West" type="priority" x="0.00" y="750.00" incLanes="W-OUT_0" intLanes=":West_0_0" shape="0.00,750.00 0.00,746.80 0.00,750.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+
+    <connection from="E-IN" to="S-OUT" fromLane="0" toLane="0" via=":TrafficLight_3_0" tl="TrafficLight" linkIndex="3" dir="l" state="o"/>
+    <connection from="E-IN" to="W-OUT" fromLane="0" toLane="0" via=":TrafficLight_4_0" tl="TrafficLight" linkIndex="4" dir="s" state="o"/>
+    <connection from="E-IN" to="N-OUT" fromLane="0" toLane="0" via=":TrafficLight_5_0" tl="TrafficLight" linkIndex="5" dir="r" state="o"/>
+    <connection from="E-OUT" to="E-IN" fromLane="0" toLane="0" via=":East_0_0" dir="T" state="M"/>
+    <connection from="N-IN" to="E-OUT" fromLane="0" toLane="0" via=":TrafficLight_6_0" tl="TrafficLight" linkIndex="6" dir="l" state="O"/>
+    <connection from="N-IN" to="S-OUT" fromLane="0" toLane="0" via=":TrafficLight_7_0" tl="TrafficLight" linkIndex="7" dir="s" state="O"/>
+    <connection from="N-IN" to="W-OUT" fromLane="0" toLane="0" via=":TrafficLight_8_0" tl="TrafficLight" linkIndex="8" dir="r" state="o"/>
+    <connection from="N-OUT" to="N-IN" fromLane="0" toLane="0" via=":North_0_0" dir="T" state="M"/>
+    <connection from="S-IN" to="W-OUT" fromLane="0" toLane="0" via=":TrafficLight_0_0" tl="TrafficLight" linkIndex="0" dir="l" state="O"/>
+    <connection from="S-IN" to="N-OUT" fromLane="0" toLane="0" via=":TrafficLight_1_0" tl="TrafficLight" linkIndex="1" dir="s" state="O"/>
+    <connection from="S-IN" to="E-OUT" fromLane="0" toLane="0" via=":TrafficLight_2_0" tl="TrafficLight" linkIndex="2" dir="r" state="o"/>
+    <connection from="S-OUT" to="S-IN" fromLane="0" toLane="0" via=":South_0_0" dir="T" state="M"/>
+    <connection from="W-IN" to="N-OUT" fromLane="0" toLane="0" via=":TrafficLight_9_0" tl="TrafficLight" linkIndex="9" dir="l" state="o"/>
+    <connection from="W-IN" to="E-OUT" fromLane="0" toLane="0" via=":TrafficLight_10_0" tl="TrafficLight" linkIndex="10" dir="s" state="o"/>
+    <connection from="W-IN" to="S-OUT" fromLane="0" toLane="0" via=":TrafficLight_11_0" tl="TrafficLight" linkIndex="11" dir="r" state="o"/>
+    <connection from="W-OUT" to="W-IN" fromLane="0" toLane="0" via=":West_0_0" dir="T" state="M"/>
+
+    <connection from=":East_0" to="E-IN" fromLane="0" toLane="0" dir="T" state="M"/>
+    <connection from=":North_0" to="N-IN" fromLane="0" toLane="0" dir="T" state="M"/>
+    <connection from=":South_0" to="S-IN" fromLane="0" toLane="0" dir="T" state="M"/>
+    <connection from=":TrafficLight_0" to="W-OUT" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":TrafficLight_1" to="N-OUT" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":TrafficLight_2" to="E-OUT" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":TrafficLight_3" to="S-OUT" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":TrafficLight_4" to="W-OUT" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":TrafficLight_5" to="N-OUT" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":TrafficLight_6" to="E-OUT" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":TrafficLight_7" to="S-OUT" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":TrafficLight_8" to="W-OUT" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":TrafficLight_9" to="N-OUT" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":TrafficLight_10" to="E-OUT" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":TrafficLight_11" to="S-OUT" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":West_0" to="W-IN" fromLane="0" toLane="0" dir="T" state="M"/>
+
+</net>

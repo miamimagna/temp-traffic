@@ -84,6 +84,8 @@ def main() -> None:
     # Process each scene's configuration
     for scene in scene_src_probabilities:
         process_scene(scene)
+    
+    os.remove("trips.trips.xml")
 
 
 if __name__ == "__main__":

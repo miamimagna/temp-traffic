@@ -1,0 +1,4 @@
+sumo-rl
+swig
+gymnasium[box2d]
+matplotlib
