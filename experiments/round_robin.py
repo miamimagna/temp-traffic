@@ -3,8 +3,8 @@ import sumo_rl
 
 env = gym.make('sumo-rl-v0',
                 net_file='../network_details/intersection.net.xml',
-                route_file='../routes/High Traffic Scenerio/test/emergency_0/intersection.rou.xml',
-                out_csv_name='../outputs/round_robin_HT_0',
+                route_file='../routes/High Traffic Scenerio/test/emergency_0.05/intersection.rou.xml',
+                out_csv_name='../outputs/round_robin_HT_0.05',
                 min_green=25,
                 yellow_time=5,
                 delta_time=10,
