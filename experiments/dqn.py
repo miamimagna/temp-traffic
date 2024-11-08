@@ -5,11 +5,11 @@ import gymnasium as gym
 from stable_baselines3.dqn.dqn import DQN
 
 
-# if "SUMO_HOME" in os.environ:
-#     tools = os.path.join(os.environ["SUMO_HOME"], "tools")
-#     sys.path.append(tools)
-# else:
-#     sys.exit("Please declare the environment variable 'SUMO_HOME'")
+if "SUMO_HOME" in os.environ:
+    tools = os.path.join(os.environ["SUMO_HOME"], "tools")
+    sys.path.append(tools)
+else:
+    sys.exit("Please declare the environment variable 'SUMO_HOME'")
 import traci
 
 from sumo_rl import SumoEnvironment
