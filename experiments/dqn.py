@@ -36,4 +36,4 @@ if __name__ == "__main__":
         exploration_final_eps=0.01,
         verbose=1,
     )
-    model.learn(total_timesteps=100000)
+    model.learn(total_timesteps=5400)
